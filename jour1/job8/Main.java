@@ -1,20 +1,21 @@
-import java.util.Scanner; // Importe la classe Scanner pour lire les entrées utilisateur
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Crée un objet Scanner pour lire les entrées de l'utilisateur
-        system.out.print("Entrez un nombre : "); // Affiche un message demandant à l'utilisateur d'entrer un nombre
-        
-        int num = scanner.nextInt(); // Lit le nombre saisi par l'utilisateur
+        Scanner scanner = new Scanner(System.in); // // Crée un scanner pour lire depuis le clavier
 
-        int sum = 0; // Déclare une variable pour stocker la somme   
-            for (int i = 1; i <= num; i++) { // Boucle qui s'exécute de 1 à num
-            sum += ( i * i * i ); // Ajoute i à la somme cube
+        System.out.print("Enter a number: "); // // Demande à l'utilisateur de saisir un nombre
+        long n = scanner.nextInt(); // // Lit le nombre entier
 
+        long sum = 0; // // Initialise la somme
 
+        // // Boucle pour calculer la somme des cubes de 1 à n
+        for (long i = 1; i <= n; i++) {
+            sum += i * i * i; // // Ajoute le cube de i à la somme
         }
-        system.out.println("La somme des cubes des nombres de 1 à " + num + " est : " + sum); // Affiche le résultat
-    } 
-}       
+
+        System.out.println("The sum of the first " + n + " cubes is: " + sum); // // Affiche la somme
+    }
+}
+
         
